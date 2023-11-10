@@ -1,0 +1,33 @@
+/* Bracket.css */
+.bracket {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px; /* Space between rounds */
+}
+
+.round {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between matches */
+}
+
+.match {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 120px; /* Fixed width for each match */
+}
+
+.competitor {
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.competitor:last-child {
+    border-bottom: none;
+}
