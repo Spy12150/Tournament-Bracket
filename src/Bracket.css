@@ -1,9 +1,10 @@
 /* Container for the entire bracket */
 .bracket {
     display: flex;
-    flex-direction: column; /* Stack rounds vertically on small screens */
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    padding: 10px; /* Add some padding */
 }
 
 /* Styling for each round */
@@ -11,7 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%; /* Full width on small screens */
+    min-width: 200px; /* Ensure minimum width for each round */
 }
 
 /* Match.css */
@@ -19,7 +20,7 @@
     border: 1px solid #000;
     padding: 10px;
     margin-bottom: 20px;
-    width: 100%; /* Full width on small screens */
+    width: 200px; /* Fixed width for match */
     text-align: center;
     background-color: #f9f9f9;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -30,8 +31,7 @@
 
 .match-detail {
     display: flex;
-    flex-direction: column; /* Stack team and scores vertically on small screens */
-    align-items: center;
+    justify-content: space-between;
     margin-bottom: 5px;
 }
 
@@ -41,36 +41,25 @@
 
 .scores {
     display: flex;
-    flex-wrap: wrap; /* Wrap scores if needed on small screens */
-    justify-content: center;
 }
 
 .score {
-    width: 30px; 
+    width: 30px;
     text-align: center;
-    margin: 5px 2px; /* Adjust margin for smaller screens */
+    margin-left: 5px;
 }
 
-/* Media query for larger screens */
-@media (min-width: 768px) {
-    .bracket {
-        flex-direction: row; /* Align rounds horizontally on larger screens */
-    }
+.round + .round {
+    margin-left: 40px;
+}
 
-    .round {
-        width: auto; /* Auto width on larger screens */
-    }
-
+/* Media query for smaller screens */
+@media (max-width: 768px) {
     .match {
-        width: 200px; /* Fixed width on larger screens */
+        width: 150px; /* Smaller width for matches on mobile */
     }
 
-    .match-detail {
-        flex-direction: row; /* Align team and scores horizontally on larger screens */
-        justify-content: space-between;
-    }
-
-    .round + .round {
-        margin-left: 40px;
+    .score {
+        width: 20px; /* Smaller score boxes on mobile */
     }
 }
