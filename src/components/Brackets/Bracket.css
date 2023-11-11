@@ -53,4 +53,19 @@
     margin-left: 40px;
 }
 
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .bracket {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+    .round + .round {
+        margin-left: 0;
+    }
+}
+
+
 

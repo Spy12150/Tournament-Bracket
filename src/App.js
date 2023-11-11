@@ -1,12 +1,12 @@
 
 import './App.css';
 import React, { useState } from 'react';
-import Bracket from './Bracket';
+import Bracket from './components/Brackets/Bracket';
 import './App.css'; // If you have a CSS file
-import TabsContainer from './TabsContainer';
-import './Tabs.css';
+import TabsContainer from './components/tabs/TabsContainer';
+import './components/tabs/Tabs.css';
 import UpcomingMatches from './UpcomingMatches'; 
-import media1 from './Media1.png'; // Update the path to your image
+import media1 from './images/lions_cup_logo.png'; // Update the path to your image
 
 const mockTournamentData = {
   "Men's Singles": [
