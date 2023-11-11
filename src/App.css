@@ -13,6 +13,35 @@
   }
 }
 
+.tabs-container {
+  /* Other styles for your tabs container */
+  margin-bottom: 20px; /* Adjust the space as needed */
+}
+
+/* App.css */
+.footer-image {
+  position: fixed; /* Fix the position to the bottom of the screen */
+  bottom: 0; /* Align to the bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust horizontal centering */
+  width: 100%; /* Take full width to center the image properly */
+  text-align: center; /* Center the image */
+}
+
+.footer-image img {
+  max-width: 5%; /* Image width is 25% of the screen width */
+  height: auto; /* Maintain the aspect ratio of the image */
+}
+
+
+.tournament-title {
+  text-align: center;
+  color: #000080; /* Dark blue color */
+  font-size: 48px; /* Large font size, adjust as needed */
+  margin-top: 20px; /* Add some space at the top */
+  margin-bottom: 20px; /* Space above the tabs */
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

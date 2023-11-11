@@ -6,6 +6,7 @@ import './App.css'; // If you have a CSS file
 import TabsContainer from './TabsContainer';
 import './Tabs.css';
 import UpcomingMatches from './UpcomingMatches'; 
+import media1 from './Media1.png'; // Update the path to your image
 
 const mockTournamentData = {
   "Men's Singles": [
@@ -74,8 +75,14 @@ const App = () => {
 
   return (
     <div className="App">
-      <TabsContainer activeTab={activeTab} setActiveTab={setActiveTab} />
+      <h1 className="tournament-title">Lions Cup</h1> {/* Add the title here */}
+      <div className="tabs-container" style={{ marginBottom: '20px' }}> {/* Inline style for margin */}
+        <TabsContainer activeTab={activeTab} setActiveTab={setActiveTab} />
+      </div>
       {renderContent()}
+      <div className="footer-image">
+        <img src={media1} alt="Lions Cup" />
+      </div>
     </div>
   );
 };
