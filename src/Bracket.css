@@ -1,16 +1,17 @@
 /* Container for the entire bracket */
 .bracket {
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Stack rounds vertically on small screens */
     align-items: center;
+    justify-content: center;
 }
 
 /* Styling for each round */
 .round {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    width: 100%; /* Full width on small screens */
 }
 
 /* Match.css */
@@ -18,12 +19,10 @@
     border: 1px solid #000;
     padding: 10px;
     margin-bottom: 20px;
-    width: 200px;
+    width: 100%; /* Full width on small screens */
     text-align: center;
     background-color: #f9f9f9;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-
-    /* Flex container to center the content */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,26 +30,47 @@
 
 .match-detail {
     display: flex;
-    justify-content: space-between; /* Space out team name and scores */
-    margin-bottom: 5px; /* Space between team rows */
+    flex-direction: column; /* Stack team and scores vertically on small screens */
+    align-items: center;
+    margin-bottom: 5px;
 }
 
 .team {
-    font-weight: bold; /* Make team names bold */
+    font-weight: bold;
 }
 
 .scores {
     display: flex;
+    flex-wrap: wrap; /* Wrap scores if needed on small screens */
+    justify-content: center;
 }
 
 .score {
-    width: 30px; /* Adjust as needed */
+    width: 30px; 
     text-align: center;
-    margin-left: 5px; /* Space between score columns */
+    margin: 5px 2px; /* Adjust margin for smaller screens */
 }
 
-.round + .round {
-    margin-left: 40px;
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .bracket {
+        flex-direction: row; /* Align rounds horizontally on larger screens */
+    }
+
+    .round {
+        width: auto; /* Auto width on larger screens */
+    }
+
+    .match {
+        width: 200px; /* Fixed width on larger screens */
+    }
+
+    .match-detail {
+        flex-direction: row; /* Align team and scores horizontally on larger screens */
+        justify-content: space-between;
+    }
+
+    .round + .round {
+        margin-left: 40px;
+    }
 }
-
-
