@@ -1,0 +1,8 @@
+.upcoming-matches-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .upcoming-matches-list li {
+    padding: 5px 0;
+  }
