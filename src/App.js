@@ -99,23 +99,23 @@ const mockTournamentData = {
     {
       name: "Round 2",
       matches: [
-        { id: 1, competitor1: 'Haoling ZHeng + Yinuo Liu', competitor2: 'Hanzhang Sun + Samantha Tom', winner: 'MS Team A', scores: [[0], [0]] },
-        { id: 2, competitor1: 'Louis Leng + Ruohan Zhu', competitor2: 'Dragon + Sai Sadhana', winner: 'MS Team D', scores: [[0], [0]] },
-        { id: 2, competitor1: 'RK + Nandini', competitor2: 'Xindi Shao + Yijun Yuan', winner: 'MS Team D', scores: [[0], [0]] },
-        { id: 2, competitor1: 'Yiming Tian + Hehua Fan', competitor2: 'Johannes Jiang + Yue Yuan', winner: 'MS Team D', scores: [[0], [0]] },
+        { id: 1, competitor1: 'Haoling ZHeng + Yinuo Liu', competitor2: 'Hanzhang Sun + Samantha Tom', winner: 'MS Team A', scores: [[13], [21]] },
+        { id: 2, competitor1: 'Louis Leng + Ruohan Zhu', competitor2: 'Dragon + Sai Sadhana', winner: 'MS Team D', scores: [[13], [21]] },
+        { id: 2, competitor1: 'RK + Nandini', competitor2: 'Xindi Shao + Yijun Yuan', winner: 'MS Team D', scores: [[21], [11]] },
+        { id: 2, competitor1: 'Yiming Tian + Hehua Fan', competitor2: 'Johannes Jiang + Yue Yuan', winner: 'MS Team D', scores: [[14], [21]] },
       ],
     },
     {
       name: "Round 3",
       matches: [
-        { id: 3, competitor1: 'Winner of Match 1', competitor2: 'Winner of Match 2', winner: null, scores: [[0, 0, 0], [0, 0, 0]] },
-        { id: 3, competitor1: 'Winner of Match 3', competitor2: 'Winner of Match 4', winner: null, scores: [[0, 0, 0], [0, 0, 0]] },
+        { id: 3, competitor1: 'Hanzhang Sun + Samantha Tom', competitor2: 'Dragon + Sai Sadhana', winner: null, scores: [[21, 21, 0], [10, 18, 0]] },
+        { id: 3, competitor1: 'RK + Nandini', competitor2: 'Johannes Jiang + Yue Yuan', winner: null, scores: [[20, 16, 0], [22, 21, 0]] },
       ],
     },
     {
       name: "Final",
       matches: [
-        { id: 3, competitor1: 'TBD', competitor2: 'TBD', winner: null, scores: [[0, 0, 0], [0, 0, 0]] }
+        { id: 3, competitor1: 'Hanzhang Sun + Samantha Tom', competitor2: 'Johannes Jiang + Yue Yuan', winner: null, scores: [[21, 11, 0], [11, 21, 0]] }
       ],
     },
     
