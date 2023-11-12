@@ -91,17 +91,17 @@ const mockGroupData = {
       teams: [
         
         { name: 'Jerry Huang', wins: 0, losses: 4 },
-        { name: 'Yunhao Liang', wins: 2, losses: 0 },
-        { name: 'Fan He Hua', wins: 0, losses: 2 },
+        { name: 'Yunhao Liang', wins: 4, losses: 0 },
+        { name: 'Fan He Hua', wins: 0, losses: 4 },
         { name: 'Hanzhang Sun', wins: 4, losses: 0 }
       ]
     },
     {
       teams: [
-        { name: 'Veer Gowda', wins: 2, losses: 0 },
-        { name: 'Yijun Yuan', wins: 0, losses: 2 },
-        { name: 'Haoling Zheng', wins: 2, losses: 1 },
-        { name: 'Jacky Yang', wins: 1, losses: 2 },
+        { name: 'Veer Gowda', wins: 4, losses: 0 },
+        { name: 'Yijun Yuan', wins: 2, losses: 2 },
+        { name: 'Haoling Zheng', wins: 2, losses: 3 },
+        { name: 'Jacky Yang', wins: 1, losses: 4 },
       ]
     },
     {
@@ -114,9 +114,9 @@ const mockGroupData = {
     },
     {
       teams: [
-        { name: 'Yixiang Luo', wins: 2, losses: 0 },
+        { name: 'Yixiang Luo', wins: 2, losses: 2},
         { name: 'Matthew Dubov', wins: 0, losses: 2 },
-        { name: 'Ren Liang Lan', wins: 2, losses: 0 },
+        { name: 'Ren Liang Lan', wins: 4, losses: 0 },
         { name: 'Jiangjiang Song', wins: 0, losses: 2 }, 
       ]
     },
@@ -142,9 +142,9 @@ const mockGroupData = {
   "Women's Singles": [
     {
       teams: [
-        { name: 'Ruohan Zhu', wins: 0, losses: 2 },
+        { name: 'Ruohan Zhu', wins: 2, losses: 2 },
         { name: 'Sai Sadhana', wins: 2, losses: 2 },
-        { name: 'Sky Arthur', wins: 0, losses: 0 },
+        { name: 'Sky Arthur', wins: 0, losses: 2 },
         { name: 'Yue Yuan', wins: 4, losses: 0 }
         
       ]
