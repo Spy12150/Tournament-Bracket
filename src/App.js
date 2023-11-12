@@ -1,12 +1,13 @@
-
-import './App.css';
 import React, { useState } from 'react';
 import Bracket from './components/Brackets/Bracket';
-import './App.css'; // If you have a CSS file
 import TabsContainer from './components/tabs/TabsContainer';
-import './components/tabs/Tabs.css';
 import UpcomingMatches from './UpcomingMatches'; 
+import GroupStage from './components/Groups/GroupStage'; // Import GroupStage component
 import media1 from './images/lions_cup_logo.png'; // Update the path to your image
+import './App.css';
+import './components/tabs/Tabs.css';
+
+
 
 const mockTournamentData = {
   "Men's Singles": [
@@ -60,7 +61,42 @@ const mockTournamentData = {
 };
 
 
-
+const mockGroupData = {
+  "Men's Singles": [
+    {
+      teams: [
+        { name: 'MS Team A', wins: 2, losses: 1 },
+        { name: 'MS Team B', wins: 1, losses: 2 },
+        { name: 'MS Team C', wins: 3, losses: 0 },
+        { name: 'MS Team D', wins: 0, losses: 3 }
+      ]
+    },
+    {
+      teams: [
+        { name: 'MS Team E', wins: 1, losses: 2 },
+        { name: 'MS Team F', wins: 2, losses: 1 },
+        { name: 'MS Team G', wins: 2, losses: 1 },
+        { name: 'MS Team H', wins: 1, losses: 2 }
+      ]
+    },
+    // Two more groups for Men's Singles...
+  ],
+  "Men's Doubles": [
+    {
+      teams: [
+        { name: 'MD Team A', wins: 2, losses: 0 },
+        { name: 'MD Team B', wins: 0, losses: 2 }
+      ]
+    },
+    {
+      teams: [
+        { name: 'MD Team C', wins: 1, losses: 1 },
+        { name: 'MD Team D', wins: 1, losses: 1 }
+      ]
+    }
+  ],
+  // Similar structure for "Women's Singles", "Women's Doubles", and "Mixed Doubles"
+};
 
 const App = () => {
   const [activeTab, setActiveTab] = useState("Men's Singles");
@@ -75,10 +111,13 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="tournament-title">Lions Cup</h1> {/* Add the title here */}
-      <div className="tabs-container" style={{ marginBottom: '20px' }}> {/* Inline style for margin */}
+      <h1 className="tournament-title">Lions Cup</h1>
+      <div className="tabs-container" style={{ marginBottom: '20px' }}>
         <TabsContainer activeTab={activeTab} setActiveTab={setActiveTab} />
       </div>
+      {activeTab === "Men's Singles" ? 
+        <GroupStage groups={mockGroupData["Men's Singles"]} /> : 
+        <GroupStage groups={mockGroupData[activeTab]} />}
       {renderContent()}
       <div className="footer-image">
         <img src={media1} alt="Lions Cup" />
