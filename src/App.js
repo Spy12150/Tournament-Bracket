@@ -92,7 +92,7 @@ const mockGroupData = {
         
         { name: 'Jerry Huang', wins: 0, losses: 0 },
         { name: 'Yunhao Liang', wins: 0, losses: 0 },
-        
+        { name: 'Fan He Hua', wins: 0, losses: 0 },
         { name: 'Hanzhang Sun', wins: 0, losses: 0 }
       ]
     },
@@ -156,6 +156,7 @@ const mockGroupData = {
         { name: 'J Yang + R Zhu', wins: 0, losses: 0 },
         { name: 'R Kore + N Natarajan', wins: 0, losses: 0 },
         { name: 'J Jiang + Y Yuan', wins: 0, losses: 0 },
+        { name: 'H Feng+ Y Tian', wins: 0, losses: 0 },
       ]
     },
     {

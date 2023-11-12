@@ -77,6 +77,15 @@ const mockUpcomingMatches = [
     time: '10:15 AM'
   },
   {
+    id: 1,
+    court: 'Court 9',
+    competitor1: 'Fan He Hua',
+    competitor2: 'Hanzhang Sun',
+    matchType: 'Groups',
+    event: 'Men\'s Singles',
+    time: '10:15 AM'
+  },
+  {
     id: 9,
     court: 'Court 1',
     competitor1: 'Jerry Huang',
@@ -149,6 +158,15 @@ const mockUpcomingMatches = [
     time: '11:10 AM'
   },
   {
+    id: 9,
+    court: 'Court 9',
+    competitor1: 'Yunhao Liang',
+    competitor2: 'Fan He Hua',
+    matchType: 'Groups',
+    event: 'Men\'s Singles',
+    time: '11:10 AM'
+  },
+  {
     id: 17,
     court: 'Court 1',
     competitor1: 'Yunhao Liang',
@@ -218,6 +236,15 @@ const mockUpcomingMatches = [
     competitor2: 'Jiayi Huang',
     matchType: 'Groups',
     event: 'Women\'s Singles',
+    time: '1:00 PM'
+  },
+  {
+    id: 17,
+    court: 'Court 9',
+    competitor1: 'Jerry Huang',
+    competitor2: 'Fan He Hua',
+    matchType: 'Groups',
+    event: 'Men\'s Singles',
     time: '1:00 PM'
   },
 ];
