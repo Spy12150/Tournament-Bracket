@@ -17,6 +17,9 @@ const Match = ({ match }) => {
             <span>{match.matchType}</span>
           </div>
           <div className="match-row">
+            <span>{match.event}</span> 
+          </div>
+          <div className="match-row">
             <span>{match.time}</span>
           </div>
         </>
