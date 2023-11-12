@@ -143,7 +143,7 @@ const mockUpcomingMatches = [
   {
     id: 23,
     court: 'Court 7',
-    competitor1: 'Jiayi Huang',
+    competitor1: 'Yue Yuan',
     competitor2: 'Ruohan Zhu',
     matchType: 'Groups',
     event: 'Women\'s Singles',

@@ -90,10 +90,10 @@ const mockGroupData = {
     {
       teams: [
         
-        { name: 'Jerry Huang', wins: 0, losses: 2 },
+        { name: 'Jerry Huang', wins: 0, losses: 4 },
         { name: 'Yunhao Liang', wins: 2, losses: 0 },
         { name: 'Fan He Hua', wins: 0, losses: 2 },
-        { name: 'Hanzhang Sun', wins: 2, losses: 0 }
+        { name: 'Hanzhang Sun', wins: 4, losses: 0 }
       ]
     },
     {
@@ -107,8 +107,8 @@ const mockGroupData = {
     {
       teams: [
         
-        { name: 'Aditya Pandya', wins: 0, losses: 0 },
-        { name: 'Rugved Kore', wins: 0, losses: 0 },
+        { name: 'Aditya Pandya', wins: 1, losses: 2 },
+        { name: 'Rugved Kore', wins: 2, losses: 1 },
         { name: 'Louis Leng', wins: 0, losses: 0 },
       ]
     },
@@ -117,8 +117,7 @@ const mockGroupData = {
         { name: 'Yixiang Luo', wins: 2, losses: 0 },
         { name: 'Matthew Dubov', wins: 0, losses: 2 },
         { name: 'Ren Liang Lan', wins: 2, losses: 0 },
-        { name: 'Jiangjiang Song', wins: 0, losses: 0 }, // Repeated
-         // Repeated
+        { name: 'Jiangjiang Song', wins: 0, losses: 2 }, 
       ]
     },
     // ... Other categories remain unchanged
@@ -144,10 +143,9 @@ const mockGroupData = {
     {
       teams: [
         { name: 'Ruohan Zhu', wins: 0, losses: 2 },
-        { name: 'Sai Sadhana', wins: 2, losses: 0 },
-        { name: 'Jiayi Huang', wins: 0, losses: 2 },
+        { name: 'Sai Sadhana', wins: 2, losses: 2 },
         { name: 'Sky Arthur', wins: 0, losses: 0 },
-        { name: 'Yue Yuan', wins: 2, losses: 0 }
+        { name: 'Yue Yuan', wins: 4, losses: 0 }
         
       ]
     }
