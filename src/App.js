@@ -45,8 +45,8 @@ const mockTournamentData = {
     {
       name: "Round 2",
       matches: [
-        { id: 1, competitor1: 'HanZhang Sun + Weijia Jiang', competitor2: 'Winner of Round 1', winner: 'MS Team A', scores: [[0], [0]] },
-        { id: 2, competitor1: 'Aditya Pandya + Rugved Kore', competitor2: 'Jerry Huang + YunHao Liang', winner: 'MS Team D', scores: [[0], [0]] },
+        { id: 1, competitor1: 'HanZhang Sun + Weijia Jiang', competitor2: 'Winner of Round 1', winner: 'MS Team A', scores: [[17], [21]] },
+        { id: 2, competitor1: 'Aditya Pandya + Rugved Kore', competitor2: 'Jerry Huang + YunHao Liang', winner: 'MS Team D', scores: [[21], [13]] },
         { id: 1, competitor1: 'John Fan + Ren Liang Lan', competitor2: 'Louis Leng + Zheng Haoling', winner: 'MS Team A', scores: [[17], [21]] },
         { id: 1, competitor1: 'Jiangjiang Song + Yijun Yuan', competitor2: 'Dragon + Veer Gowda', winner: 'MS Team A', scores: [[10], [21]] },
       ],
@@ -54,14 +54,14 @@ const mockTournamentData = {
     {
       name: "Round 3",
       matches: [
-        { id: 3, competitor1: 'Winner of Match 1', competitor2: 'Winner of Match 2', winner: null, scores: [[0, 0, 0], [0, 0, 0]] },
-        { id: 3, competitor1: 'Louis Leng + Zheng Haoling', competitor2: 'Dragon + Veer Gowda', winner: null, scores: [[0, 0, 0], [0, 0, 0]] },
+        { id: 3, competitor1: 'HanZhang Sun + Weijia Jiang', competitor2: 'Aditya Pandya + Rugved Kore', winner: null, scores: [[21, 21, 0], [12, 15, 0]] },
+        { id: 3, competitor1: 'Louis Leng + Zheng Haoling', competitor2: 'Dragon + Veer Gowda', winner: null, scores: [[21, 21, 0], [18, 17, 0]] },
       ],
     },
     {
       name: "Finals",
       matches: [
-        { id: 3, competitor1: 'Winner of match 1', competitor2: 'Winner of Match 2', winner: null, scores: [[0, 0, 0], [0, 0, 0]] },
+        { id: 3, competitor1: 'HanZhang Sun + Weijia Jiang', competitor2: 'Louis Leng + Zheng Haoling', winner: null, scores: [[0, 0, 0], [0, 0, 0]] },
       ],
     },
     
@@ -93,7 +93,7 @@ const mockTournamentData = {
     {
       name: "Round 1",
       matches: [
-        { id: 2, competitor1: 'Xindi Shao + Yijun Yuan', competitor2: 'Sky Arthur + Matthew Dubov', winner: 'MS Team D', scores: [[0], [0]] },
+        { id: 2, competitor1: 'Xindi Shao + Yijun Yuan', competitor2: 'Sky Arthur + Matthew Dubov', winner: 'MS Team D', scores: [[21], [4]] },
       ],
     },
     {
@@ -101,7 +101,7 @@ const mockTournamentData = {
       matches: [
         { id: 1, competitor1: 'Haoling ZHeng + Yinuo Liu', competitor2: 'Hanzhang Sun + Samantha Tom', winner: 'MS Team A', scores: [[0], [0]] },
         { id: 2, competitor1: 'Louis Leng + Ruohan Zhu', competitor2: 'Dragon + Sai Sadhana', winner: 'MS Team D', scores: [[0], [0]] },
-        { id: 2, competitor1: 'RK + Nandini', competitor2: 'Winner of Round 1', winner: 'MS Team D', scores: [[0], [0]] },
+        { id: 2, competitor1: 'RK + Nandini', competitor2: 'Xindi Shao + Yijun Yuan', winner: 'MS Team D', scores: [[0], [0]] },
         { id: 2, competitor1: 'Yiming Tian + Hehua Fan', competitor2: 'Johannes Jiang + Yue Yuan', winner: 'MS Team D', scores: [[0], [0]] },
       ],
     },
