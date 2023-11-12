@@ -14,10 +14,10 @@ const mockTournamentData = {
     {
       name: "Round 1",
       matches: [
-        { id: 1, competitor1: '#1  Group 1', competitor2: '#2  Group 4', winner: 'MS Team A', scores: [[0, 0, 0], [0, 0, 0]] },
-        { id: 2, competitor1: '#1  Group 2', competitor2: '#2  Group 3', winner: 'MS Team D', scores: [[0, 0, 0], [0, 0, 0]] },
-        { id: 3, competitor1: '#1  Group 3', competitor2: '#2  Group 2', winner: 'MS Team E', scores: [[0, 0, 0], [0, 0, 0]] },
-        { id: 4, competitor1: '#1  Group 4', competitor2: '#2  Group 1', winner: 'MS Team G', scores: [[0, 0, 0], [0, 0, 0]] }
+        { id: 1, competitor1: 'Hanzhang Sun', competitor2: 'Yixiang Luo', winner: 'MS Team A', scores: [[0, 0, 0], [0, 0, 0]] },
+        { id: 2, competitor1: 'Veer Gowda', competitor2: 'Aditya Pandya', winner: 'MS Team D', scores: [[0, 0, 0], [0, 0, 0]] },
+        { id: 3, competitor1: 'Rugved Kore', competitor2: 'Yijun Yuan', winner: 'MS Team E', scores: [[0, 0, 0], [0, 0, 0]] },
+        { id: 4, competitor1: 'Ren Liang Lan', competitor2: 'Yunhao Liang', winner: 'MS Team G', scores: [[0, 0, 0], [0, 0, 0]] }
       ],
     },
     {
@@ -38,14 +38,30 @@ const mockTournamentData = {
     {
       name: "Round 1",
       matches: [
-        { id: 1, competitor1: '#1  Group 1', competitor2: '#2  Group 2', winner: 'MS Team A', scores: [[0, 0, 0], [0, 0, 0]] },
-        { id: 2, competitor1: '#1  Group 2', competitor2: '#2  Group 1', winner: 'MS Team D', scores: [[0, 0, 0], [0, 0, 0]] },
+        { id: 1, competitor1: 'Jacky Yang + Hehua Fan', competitor2: 'Jian Wutan + Victor Lin', winner: 'MS Team A', scores: [[0, 0, 0], [0, 0, 0]] },
+
       ],
     },
     {
-      name: "Final",
+      name: "Round 2",
       matches: [
-        { id: 3, competitor1: 'TBD', competitor2: 'TBD', winner: null, scores: [[0, 0, 0], [0, 0, 0]] }
+        { id: 1, competitor1: 'HanZhang Sun + Weijia Jiang', competitor2: 'Winner of Round 1', winner: 'MS Team A', scores: [[0, 0, 0], [0, 0, 0]] },
+        { id: 2, competitor1: 'Aditya Pandya + Rugved Kore', competitor2: 'Jerry Huang + YunHao Liang', winner: 'MS Team D', scores: [[0, 0, 0], [0, 0, 0]] },
+        { id: 1, competitor1: 'John Fan + Ren Liang Lan', competitor2: 'Louis Leng + Zheng Haoling', winner: 'MS Team A', scores: [[0, 0, 0], [0, 0, 0]] },
+        { id: 1, competitor1: 'Jiangjiang Song + Yijun Yuan', competitor2: 'Dragon + Veer Gowda', winner: 'MS Team A', scores: [[0, 0, 0], [0, 0, 0]] },
+      ],
+    },
+    {
+      name: "Round 3",
+      matches: [
+        { id: 3, competitor1: 'Winner of match 1', competitor2: 'Winner of Match 2', winner: null, scores: [[0, 0, 0], [0, 0, 0]] },
+        { id: 3, competitor1: 'Winner of Match 3  ', competitor2: 'Winner of Match 4', winner: null, scores: [[0, 0, 0], [0, 0, 0]] },
+      ],
+    },
+    {
+      name: "Finals",
+      matches: [
+        { id: 3, competitor1: 'Winner of match 1', competitor2: 'Winner of Match 2', winner: null, scores: [[0, 0, 0], [0, 0, 0]] },
       ],
     },
     
@@ -54,15 +70,22 @@ const mockTournamentData = {
     {
       name: "Final",
       matches: [
-        { id: 3, competitor1: '#1 Group 1', competitor2: '#2 Group 1', winner: null, scores: [[0, 0, 0], [0, 0, 0]] }
+        { id: 3, competitor1: 'Yoyo', competitor2: 'Sai Sadhana', winner: null, scores: [[0, 0, 0], [0, 0, 0]] }
       ],
     },
   ],
   "Women's Doubles": [
     {
-      name: "Final",
+      name: "Round 1",
       matches: [
-        { id: 3, competitor1: 'S Tom + Y Yuan', competitor2: 'N Natarajan + J Huang', winner: null, scores: [[0, 0, 0], [0, 0, 0]] }
+        { id: 3, competitor1: 'Ruohan Zhu + Xindi Shao', competitor2: 'Nandini Natarajan + Sky Arthur', winner: null, scores: [[0, 0, 0], [0, 0, 0]] },
+        { id: 3, competitor1: 'Yiming Tian + Yinuo Liu', competitor2: 'Sai Sadhana + Yue Yuan', winner: null, scores: [[0, 0, 0], [0, 0, 0]] },
+      ],
+    },
+    {
+      name: "Finals",
+      matches: [
+        { id: 3, competitor1: 'Winner of match 1', competitor2: 'Winner of Match 2', winner: null, scores: [[0, 0, 0], [0, 0, 0]] },
       ],
     },
   ],
@@ -90,62 +113,45 @@ const mockGroupData = {
     {
       teams: [
         
-        { name: 'Jerry Huang', wins: 0, losses: 4 },
-        { name: 'Yunhao Liang', wins: 4, losses: 0 },
-        { name: 'Fan He Hua', wins: 0, losses: 4 },
-        { name: 'Hanzhang Sun', wins: 4, losses: 0 }
+        { name: 'Jerry Huang', wins: 0, losses: 6 },
+        { name: 'Yunhao Liang', wins: 4, losses: 2 },
+        { name: 'Fan He Hua', wins: 2, losses: 4 },
+        { name: 'Hanzhang Sun', wins: 6, losses: 0 }
       ]
     },
     {
       teams: [
-        { name: 'Veer Gowda', wins: 4, losses: 0 },
-        { name: 'Yijun Yuan', wins: 2, losses: 2 },
-        { name: 'Haoling Zheng', wins: 2, losses: 3 },
-        { name: 'Jacky Yang', wins: 1, losses: 4 },
+        { name: 'Veer Gowda', wins: 6, losses: 0 },
+        { name: 'Yijun Yuan', wins: 4, losses: 2 },
+        { name: 'Haoling Zheng', wins: 2, losses: 5 },
+        { name: 'Jacky Yang', wins: 1, losses: 5 },
       ]
     },
     {
       teams: [
         
-        { name: 'Aditya Pandya', wins: 1, losses: 2 },
-        { name: 'Rugved Kore', wins: 2, losses: 1 },
-        { name: 'Louis Leng', wins: 0, losses: 0 },
+        { name: 'Aditya Pandya', wins: 3, losses: 2 },
+        { name: 'Rugved Kore', wins: 4, losses: 2 },
+        { name: 'Louis Leng', wins: 1, losses: 4 }, 
       ]
     },
     {
       teams: [
-        { name: 'Yixiang Luo', wins: 2, losses: 2},
-        { name: 'Matthew Dubov', wins: 0, losses: 2 },
-        { name: 'Ren Liang Lan', wins: 4, losses: 0 },
-        { name: 'Jiangjiang Song', wins: 0, losses: 2 }, 
+        { name: 'Yixiang Luo', wins: 4, losses: 2},
+        { name: 'Matthew Dubov', wins: 0, losses: 6 },
+        { name: 'Ren Liang Lan', wins: 6, losses: 0 },
+        { name: 'Jiangjiang Song', wins: 2, losses: 4 }, 
       ]
     },
     // ... Other categories remain unchanged
   ],
-  "Men's Doubles": [
-    {
-      teams: [
-        { name: 'J Song + Y Yuan', wins: 0, losses: 0 },
-        
-        { name: 'J Yang + L Leng', wins: 0, losses: 0 },
-        { name: 'H Sun + W Jiang', wins: 0, losses: 0 },
-      ]
-    },
-    {
-      teams: [
-        { name: 'J Huang + Y Liang', wins: 0, losses: 0 },
-        { name: 'V Gowda + M Nordin', wins: 0, losses: 0 },
-        { name: 'J Fan + R Liang', wins: 0, losses: 0 }
-      ]
-    }
-  ],
   "Women's Singles": [
     {
       teams: [
-        { name: 'Ruohan Zhu', wins: 2, losses: 2 },
-        { name: 'Sai Sadhana', wins: 2, losses: 2 },
-        { name: 'Sky Arthur', wins: 0, losses: 2 },
-        { name: 'Yue Yuan', wins: 4, losses: 0 }
+        { name: 'Ruohan Zhu', wins: 2, losses: 4 },
+        { name: 'Sai Sadhana', wins: 4, losses: 2 },
+        { name: 'Sky Arthur', wins: 0, losses: 4 },
+        { name: 'Yue Yuan', wins: 6, losses: 0 }
         
       ]
     }
