@@ -61,7 +61,7 @@ const mockTournamentData = {
     {
       name: "Finals",
       matches: [
-        { id: 3, competitor1: 'HanZhang Sun + Weijia Jiang', competitor2: 'Louis Leng + Zheng Haoling', winner: null, scores: [[0, 0, 0], [0, 0, 0]] },
+        { id: 3, competitor1: 'HanZhang Sun + Weijia Jiang', competitor2: 'Louis Leng + Zheng Haoling', winner: null, scores: [[21, 21, 0], [19, 8, 0]] },
       ],
     },
     
