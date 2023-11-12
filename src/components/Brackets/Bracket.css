@@ -3,16 +3,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-x: auto; /* Allow horizontal scrolling */
-    padding: 10px; /* Add some padding */
 }
 
 /* Styling for each round */
 .round {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    min-width: 200px; /* Ensure minimum width for each round */
 }
 
 /* Match.css */
@@ -20,10 +18,12 @@
     border: 1px solid #000;
     padding: 10px;
     margin-bottom: 20px;
-    width: 200px; /* Fixed width for match */
+    width: 200px;
     text-align: center;
     background-color: #f9f9f9;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+    /* Flex container to center the content */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,12 +31,12 @@
 
 .match-detail {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 5px;
+    justify-content: space-between; /* Space out team name and scores */
+    margin-bottom: 5px; /* Space between team rows */
 }
 
 .team {
-    font-weight: bold;
+    font-weight: bold; /* Make team names bold */
 }
 
 .scores {
@@ -44,22 +44,28 @@
 }
 
 .score {
-    width: 30px;
+    width: 30px; /* Adjust as needed */
     text-align: center;
-    margin-left: 5px;
+    margin-left: 5px; /* Space between score columns */
 }
 
 .round + .round {
     margin-left: 40px;
 }
 
-/* Media query for smaller screens */
+/* Media query for mobile devices */
 @media (max-width: 768px) {
-    .match {
-        width: 150px; /* Smaller width for matches on mobile */
-    }
+  .bracket {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 
-    .score {
-        width: 20px; /* Smaller score boxes on mobile */
+@media (max-width: 768px) {
+    .round + .round {
+        margin-left: 0;
     }
 }
+
+
+

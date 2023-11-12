@@ -1,6 +1,6 @@
 // Bracket.js
 import React from 'react';
-import Round from './Round';
+import Round from '../../Round';
 import './Bracket.css';
 
 const Bracket = ({ tournamentData = [] }) => {
