@@ -16,6 +16,18 @@
     border: 1px solid #000;
 }
 
+.group ul {
+    list-style-type: none; /* Removes default list item markers */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+  }
+  
+  .group li {
+    text-align: left; /* Aligns list text to the left */
+    padding: 5px 0; /* Optional: Adds padding for each list item */
+    /* Other styles as needed... */
+  }
+  
 .group h3 {
     margin-bottom: 10px;
 }

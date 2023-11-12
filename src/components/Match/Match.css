@@ -1,0 +1,11 @@
+.match {
+    border: 1px solid #000;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .match-row {
+    margin-bottom: 5px;
+  }

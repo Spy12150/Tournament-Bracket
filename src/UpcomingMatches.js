@@ -1,52 +1,36 @@
-// UpcomingMatches.js
 import React from 'react';
-import './UpcomingMatches.css';
+import Match from './components/Match/Match'; // Adjust the path as necessary
+import './UpcomingMatches.css'; 
 
-const matchesData = [
-    {
-      id: 1,
-      competitor1: 'Team 1',
-      competitor2: 'Team 2',
-      court: 'Court 1',
-      time: '10:00 AM'
-    },
-    {
-      id: 2,
-      competitor1: 'Team 3',
-      competitor2: 'Team 4',
-      court: 'Court 2',
-      time: '10:45 AM'
-    },
-    {
-      id: 3,
-      competitor1: 'Team 5',
-      competitor2: 'Team 6',
-      court: 'Court 1',
-      time: '11:30 AM'
-    },
-    {
-      id: 4,
-      competitor1: 'Team 7',
-      competitor2: 'Team 8',
-      court: 'Court 3',
-      time: '12:15 PM'
-    },
-    // ... more matches as needed
-  ];
+// Define mockUpcomingMatches here
+const mockUpcomingMatches = [
+  {
+    id: 1,
+    court: 'Court 1',
+    competitor1: 'Team 1',
+    competitor2: 'Team 2',
+    matchType: 'Groups',
+    time: '10:00 AM'
+  },
+  {
+    id: 2,
+    court: 'Court 2',
+    competitor1: 'Team 3',
+    competitor2: 'Team 4',
+    matchType: 'Quarter Finals',
+    time: '11:00 AM'
+  },
+  // ... more matches
+];
 
-const UpcomingMatches = ( ) => {
-    return (
-        <div>
-          <h2>Upcoming Matches</h2>
-          <ul>
-            {matchesData.map(match => ( // Use matchesData here
-              <li key={match.id}>
-                {match.competitor1} vs {match.competitor2} - Court: {match.court} - Time: {match.time}
-              </li>
-            ))}
-          </ul>
-        </div>
-      );
-    };
+const UpcomingMatches = () => {
+  return (
+    <div className="upcoming-matches">
+      {mockUpcomingMatches.map(match => (
+        <Match key={match.id} match={match} />
+      ))}
+    </div>
+  );
+};
 
 export default UpcomingMatches;

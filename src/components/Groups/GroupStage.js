@@ -2,6 +2,11 @@ import React from 'react';
 import './GroupStage.css'; // Make sure this is correctly imported
 
 const GroupStage = ({ groups }) => {
+  // Check if groups is undefined, empty, or contains any empty group
+  if (!groups || groups.length === 0 || groups.some(group => !group.teams || group.teams.length === 0)) {
+    return null;
+  }
+
   return (
     <div className="group-stage">
       {groups.map((group, index) => (

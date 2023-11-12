@@ -14,23 +14,23 @@ const mockTournamentData = {
     {
       name: "Round 1",
       matches: [
-        { id: 1, competitor1: 'MS Team A', competitor2: 'MS Team B', winner: 'MS Team A', scores: [[0, 0, 0], [0, 0, 0]] },
-        { id: 2, competitor1: 'MS Team C', competitor2: 'MS Team D', winner: 'MS Team D', scores: [[0, 0, 0], [0, 0, 0]] },
-        { id: 3, competitor1: 'MS Team E', competitor2: 'MS Team F', winner: 'MS Team E', scores: [[0, 0, 0], [0, 0, 0]] },
-        { id: 4, competitor1: 'MS Team G', competitor2: 'MS Team H', winner: 'MS Team G', scores: [[0, 0, 0], [0, 0, 0]] }
+        { id: 1, competitor1: '#1  Group 1', competitor2: '#2  Group 4', winner: 'MS Team A', scores: [[0, 0, 0], [0, 0, 0]] },
+        { id: 2, competitor1: '#1  Group 2', competitor2: '#2  Group 3', winner: 'MS Team D', scores: [[0, 0, 0], [0, 0, 0]] },
+        { id: 3, competitor1: '#1  Group 3', competitor2: '#2  Group 2', winner: 'MS Team E', scores: [[0, 0, 0], [0, 0, 0]] },
+        { id: 4, competitor1: '#1  Group 4', competitor2: '#2  Group 1', winner: 'MS Team G', scores: [[0, 0, 0], [0, 0, 0]] }
       ],
     },
     {
       name: "Round 2",
       matches: [
-        { id: 5, competitor1: 'MS Team A', competitor2: 'MS Team D', winner: null, scores: [[0, 0, 0], [0, 0, 0]] },
-        { id: 6, competitor1: 'MS Team E', competitor2: 'MS Team G', winner: null, scores: [[0, 0, 0], [0, 0, 0]] }
+        { id: 5, competitor1: 'TBD', competitor2: 'TBD', winner: null, scores: [[0, 0, 0], [0, 0, 0]] },
+        { id: 6, competitor1: 'TBD', competitor2: 'TBD', winner: null, scores: [[0, 0, 0], [0, 0, 0]] }
       ],
     },
     {
       name: "Final",
       matches: [
-        { id: 7, competitor1: 'Winner of Match 5', competitor2: 'Winner of Match 6', winner: null, scores: [[0, 0, 0], [0, 0, 0]] }
+        { id: 7, competitor1: 'TBD', competitor2: 'TBD', winner: null, scores: [[0, 0, 0], [0, 0, 0]] }
       ],
     },
   ],
@@ -38,25 +38,49 @@ const mockTournamentData = {
     {
       name: "Round 1",
       matches: [
-        { id: 1, competitor1: 'MD Team A', competitor2: 'MD Team B', winner: null, scores: [[0, 0, 0], [0, 0, 0]] },
-        { id: 2, competitor1: 'MD Team C', competitor2: 'MD Team D', winner: null, scores: [[0, 0, 0], [0, 0, 0]] }
+        { id: 1, competitor1: '#1  Group 1', competitor2: '#2  Group 2', winner: 'MS Team A', scores: [[0, 0, 0], [0, 0, 0]] },
+        { id: 2, competitor1: '#1  Group 2', competitor2: '#2  Group 1', winner: 'MS Team D', scores: [[0, 0, 0], [0, 0, 0]] },
       ],
     },
     {
       name: "Final",
       matches: [
-        { id: 3, competitor1: 'Winner of Match 1', competitor2: 'Winner of Match 2', winner: null, scores: [[0, 0, 0], [0, 0, 0]] }
+        { id: 3, competitor1: 'TBD', competitor2: 'TBD', winner: null, scores: [[0, 0, 0], [0, 0, 0]] }
+      ],
+    },
+    
+  ],
+  "Women's Singles": [
+    {
+      name: "Final",
+      matches: [
+        { id: 3, competitor1: '#1 Group 1', competitor2: '#2 Group 1', winner: null, scores: [[0, 0, 0], [0, 0, 0]] }
       ],
     },
   ],
-  "Women's Singles": [
-    // ... Similar structure to Men's Doubles
-  ],
   "Women's Doubles": [
-    // ... Similar structure to Men's Doubles
+    {
+      name: "Final",
+      matches: [
+        { id: 3, competitor1: 'S Tom + Y Yuan', competitor2: 'N Natarajan + J Huang', winner: null, scores: [[0, 0, 0], [0, 0, 0]] }
+      ],
+    },
   ],
   "Mixed Doubles": [
-    // ... Similar structure to Men's Doubles
+    {
+      name: "Round 1",
+      matches: [
+        { id: 1, competitor1: '#1  Group 1', competitor2: '#2  Group 2', winner: 'MS Team A', scores: [[0, 0, 0], [0, 0, 0]] },
+        { id: 2, competitor1: '#1  Group 2', competitor2: '#2  Group 1', winner: 'MS Team D', scores: [[0, 0, 0], [0, 0, 0]] },
+      ],
+    },
+    {
+      name: "Final",
+      matches: [
+        { id: 3, competitor1: 'TBD', competitor2: 'TBD', winner: null, scores: [[0, 0, 0], [0, 0, 0]] }
+      ],
+    },
+    
   ],
 };
 
@@ -65,37 +89,83 @@ const mockGroupData = {
   "Men's Singles": [
     {
       teams: [
-        { name: 'MS Team A', wins: 2, losses: 1 },
-        { name: 'MS Team B', wins: 1, losses: 2 },
-        { name: 'MS Team C', wins: 3, losses: 0 },
-        { name: 'MS Team D', wins: 0, losses: 3 }
+        
+        { name: 'Jerry Huang', wins: 0, losses: 0 },
+        { name: 'Yunhao Liang', wins: 0, losses: 0 },
+        
+        { name: 'Hanzhang Sun', wins: 0, losses: 0 }
       ]
     },
     {
       teams: [
-        { name: 'MS Team E', wins: 1, losses: 2 },
-        { name: 'MS Team F', wins: 2, losses: 1 },
-        { name: 'MS Team G', wins: 2, losses: 1 },
-        { name: 'MS Team H', wins: 1, losses: 2 }
+        { name: 'Veer Gowda', wins: 0, losses: 0 },
+        { name: 'Yijun Yuan', wins: 0, losses: 0 },
+        { name: 'Haoling Zheng', wins: 0, losses: 0 },
+        { name: 'Jacky Yang', wins: 0, losses: 0 },
       ]
     },
-    // Two more groups for Men's Singles...
+    {
+      teams: [
+        
+        { name: 'Aditya Pandya', wins: 0, losses: 0 },
+        { name: 'Rugved Kore', wins: 0, losses: 0 },
+        { name: 'Louis Leng', wins: 0, losses: 0 },
+      ]
+    },
+    {
+      teams: [
+        { name: 'Yixiang Luo', wins: 0, losses: 0 },
+        { name: 'Matthew Dubov', wins: 0, losses: 0 },
+        { name: 'Ren Liang Lan', wins: 0, losses: 0 },
+        { name: 'Jiangjiang Song', wins: 0, losses: 0 }, // Repeated
+         // Repeated
+      ]
+    },
+    // ... Other categories remain unchanged
   ],
   "Men's Doubles": [
     {
       teams: [
-        { name: 'MD Team A', wins: 2, losses: 0 },
-        { name: 'MD Team B', wins: 0, losses: 2 }
+        { name: 'J Song + Y Yuan', wins: 0, losses: 0 },
+        
+        { name: 'J Yang + L Leng', wins: 0, losses: 0 },
+        { name: 'H Sun + W Jiang', wins: 0, losses: 0 },
       ]
     },
     {
       teams: [
-        { name: 'MD Team C', wins: 1, losses: 1 },
-        { name: 'MD Team D', wins: 1, losses: 1 }
+        { name: 'J Huang + Y Liang', wins: 0, losses: 0 },
+        { name: 'V Gowda + M Nordin', wins: 0, losses: 0 },
+        { name: 'J Fan + R Liang', wins: 0, losses: 0 }
       ]
     }
   ],
-  // Similar structure for "Women's Singles", "Women's Doubles", and "Mixed Doubles"
+  "Women's Singles": [
+    {
+      teams: [
+        { name: 'Ruohan Zhu', wins: 0, losses: 0 },
+        { name: 'Sai Sadhana', wins: 0, losses: 0 },
+        { name: 'Jiayi Huang', wins: 0, losses: 0 },
+        { name: 'Yue Yuan', wins: 0, losses: 0 }
+      ]
+    }
+  ],
+  "Mixed Doubles": [
+    {
+      teams: [
+        { name: 'J Yang + R Zhu', wins: 0, losses: 0 },
+        { name: 'R Kore + N Natarajan', wins: 0, losses: 0 },
+        { name: 'J Jiang + Y Yuan', wins: 0, losses: 0 },
+      ]
+    },
+    {
+      teams: [
+        { name: 'M Dubov + S Arthur', wins: 0, losses: 0 },
+        { name: 'M Nordin + S Sadhana', wins: 0, losses: 0 },
+        { name: 'H Sun + S Tom', wins: 0, losses: 0 },
+      ]
+    }
+  ],
 };
 
 const App = () => {
@@ -109,15 +179,21 @@ const App = () => {
     }
   };
 
+  const renderGroupStage = () => {
+    // Only render GroupStage for specific tabs
+    if (['Men\'s Singles', 'Men\'s Doubles', 'Women\'s Singles', 'Women\'s Doubles', 'Mixed Doubles'].includes(activeTab)) {
+      return <GroupStage groups={mockGroupData[activeTab]} />;
+    }
+    return null;
+  };
+
   return (
     <div className="App">
       <h1 className="tournament-title">Lions Cup</h1>
       <div className="tabs-container" style={{ marginBottom: '20px' }}>
         <TabsContainer activeTab={activeTab} setActiveTab={setActiveTab} />
       </div>
-      {activeTab === "Men's Singles" ? 
-        <GroupStage groups={mockGroupData["Men's Singles"]} /> : 
-        <GroupStage groups={mockGroupData[activeTab]} />}
+      {renderGroupStage()}
       {renderContent()}
       <div className="footer-image">
         <img src={media1} alt="Lions Cup" />
@@ -127,3 +203,5 @@ const App = () => {
 };
 
 export default App;
+
+

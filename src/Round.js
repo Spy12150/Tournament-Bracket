@@ -1,6 +1,6 @@
 // Round.js
 import React from 'react';
-import Match from './components/Match/Match';
+import Match from './components/Match/Match'; // Adjust the path as necessary
 
 const Round = ({ round }) => {
   return (

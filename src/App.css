@@ -42,9 +42,12 @@
 .tournament-title {
   text-align: center;
   color: #000080; /* Dark blue color */
-  font-size: 48px; /* Large font size, adjust as needed */
+  font-size: 56px; /* Large font size, adjust as needed */
   margin-top: 20px; /* Add some space at the top */
   margin-bottom: 20px; /* Space above the tabs */
+  
+  font-weight: 1500;
+  font-family: 'Times New Roman', sans-serif; /* Use the chosen font */
 }
 
 .App-header {
