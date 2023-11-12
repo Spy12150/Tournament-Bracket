@@ -5,87 +5,7 @@ import './UpcomingMatches.css';
 // Define mockUpcomingMatches here
 const mockUpcomingMatches = [
   
-  {
-    id: 9,
-    court: 'Court 1',
-    competitor1: 'Jerry Huang',
-    competitor2: 'Hanzhang Sun',
-    matchType: 'Groups',
-    event: 'Men\'s Singles',
-    time: '11:10 AM'
-  },
-  {
-    id: 10,
-    court: 'Court 2',
-    competitor1: 'Veer Gowda',
-    competitor2: 'Haoling Zheng',
-    matchType: 'Groups',
-    event: 'Men\'s Singles',
-    time: '11:10 AM'
-  },
-  {
-    id: 11,
-    court: 'Court 3',
-    competitor1: 'Yijun Yuan',
-    competitor2: 'Jacky Yang',
-    matchType: 'Groups',
-    event: 'Men\'s Singles',
-    time: '11:10 AM'
-  },
-  {
-    id: 12,
-    court: 'Court 4',
-    competitor1: 'Aditya Pandya',
-    competitor2: 'Louis Leng',
-    matchType: 'Groups',
-    event: 'Men\'s Singles',
-    time: '11:10 AM'
-  },
-  {
-    id: 13,
-    court: 'Court 5',
-    competitor1: 'Yixiang Luo',
-    competitor2: 'Ren Liang Lan',
-    matchType: 'Groups',
-    event: 'Men\'s Singles',
-    time: '11:10 AM'
-  },
-  {
-    id: 14,
-    court: 'Court 6',
-    competitor1: 'Matthew Dubov',
-    competitor2: 'Jiangjiang Song',
-    matchType: 'Groups',
-    event: 'Men\'s Singles',
-    time: '11:10 AM'
-  },
-  {
-    id: 15,
-    court: 'Court 7',
-    competitor1: 'Sky Arthur ',
-    competitor2: 'Ruohan Zhu',
-    matchType: 'Groups',
-    event: 'Women\'s Singles',
-    time: '11:10 AM'
-  },
-  {
-    id: 16,
-    court: 'Court 8',
-    competitor1: 'Sai Sadhana',
-    competitor2: 'Yue Yuan',
-    matchType: 'Groups',
-    event: 'Women\'s Singles',
-    time: '11:10 AM'
-  },
-  {
-    id: 9,
-    court: 'Court 9',
-    competitor1: 'Yunhao Liang',
-    competitor2: 'Fan He Hua',
-    matchType: 'Groups',
-    event: 'Men\'s Singles',
-    time: '11:10 AM'
-  },
+  
   {
     id: 17,
     court: 'Court 1',
@@ -93,7 +13,7 @@ const mockUpcomingMatches = [
     competitor2: 'Hanzhang Sun',
     matchType: 'Groups',
     event: 'Men\'s Singles',
-    time: '1:00 PM'
+    time: '11:45 AM'
   },
   {
     id: 18,
@@ -102,7 +22,7 @@ const mockUpcomingMatches = [
     competitor2: 'Jacky Yang',
     matchType: 'Groups',
     event: 'Men\'s Singles',
-    time: '1:00 PM'
+    time: '11:45 AM'
   },
   {
     id: 19,
@@ -111,7 +31,7 @@ const mockUpcomingMatches = [
     competitor2: 'Haoling Zheng',
     matchType: 'Groups',
     event: 'Men\'s Singles',
-    time: '1:00 PM'
+    time: '11:45 AM'
   },
   {
     id: 20,
@@ -120,7 +40,7 @@ const mockUpcomingMatches = [
     competitor2: 'Louis Leng',
     matchType: 'Groups',
     event: 'Men\'s Singles',
-    time: '1:00 PM'
+    time: '11:45 AM'
   },
   {
     id: 21,
@@ -129,7 +49,7 @@ const mockUpcomingMatches = [
     competitor2: 'Jiangjiang Song',
     matchType: 'Groups',
     event: 'Men\'s Singles',
-    time: '1:00 PM'
+    time: '11:45 AM'
   },
   {
     id: 22,
@@ -138,7 +58,7 @@ const mockUpcomingMatches = [
     competitor2: 'Ren Liang Lan',
     matchType: 'Groups',
     event: 'Men\'s Singles',
-    time: '1:00 PM'
+    time: '11:45 AM'
   },
   {
     id: 23,
@@ -147,7 +67,7 @@ const mockUpcomingMatches = [
     competitor2: 'Ruohan Zhu',
     matchType: 'Groups',
     event: 'Women\'s Singles',
-    time: '1:00 PM'
+    time: '11:45 AM'
   },
   {
     id: 24,
@@ -156,7 +76,7 @@ const mockUpcomingMatches = [
     competitor2: 'Sai Sadhana',
     matchType: 'Groups',
     event: 'Women\'s Singles',
-    time: '1:00 PM'
+    time: '11:45 AM'
   },
   {
     id: 17,
@@ -165,7 +85,7 @@ const mockUpcomingMatches = [
     competitor2: 'Fan He Hua',
     matchType: 'Groups',
     event: 'Men\'s Singles',
-    time: '1:00 PM'
+    time: '11:45 AM'
   },
 ];
 
