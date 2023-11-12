@@ -90,18 +90,18 @@ const mockGroupData = {
     {
       teams: [
         
-        { name: 'Jerry Huang', wins: 0, losses: 0 },
-        { name: 'Yunhao Liang', wins: 0, losses: 0 },
-        { name: 'Fan He Hua', wins: 0, losses: 0 },
-        { name: 'Hanzhang Sun', wins: 0, losses: 0 }
+        { name: 'Jerry Huang', wins: 0, losses: 2 },
+        { name: 'Yunhao Liang', wins: 2, losses: 0 },
+        { name: 'Fan He Hua', wins: 0, losses: 2 },
+        { name: 'Hanzhang Sun', wins: 2, losses: 0 }
       ]
     },
     {
       teams: [
-        { name: 'Veer Gowda', wins: 0, losses: 0 },
-        { name: 'Yijun Yuan', wins: 0, losses: 0 },
-        { name: 'Haoling Zheng', wins: 0, losses: 0 },
-        { name: 'Jacky Yang', wins: 0, losses: 0 },
+        { name: 'Veer Gowda', wins: 2, losses: 0 },
+        { name: 'Yijun Yuan', wins: 0, losses: 2 },
+        { name: 'Haoling Zheng', wins: 2, losses: 1 },
+        { name: 'Jacky Yang', wins: 1, losses: 2 },
       ]
     },
     {
@@ -114,9 +114,9 @@ const mockGroupData = {
     },
     {
       teams: [
-        { name: 'Yixiang Luo', wins: 0, losses: 0 },
-        { name: 'Matthew Dubov', wins: 0, losses: 0 },
-        { name: 'Ren Liang Lan', wins: 0, losses: 0 },
+        { name: 'Yixiang Luo', wins: 2, losses: 0 },
+        { name: 'Matthew Dubov', wins: 0, losses: 2 },
+        { name: 'Ren Liang Lan', wins: 2, losses: 0 },
         { name: 'Jiangjiang Song', wins: 0, losses: 0 }, // Repeated
          // Repeated
       ]
@@ -143,10 +143,12 @@ const mockGroupData = {
   "Women's Singles": [
     {
       teams: [
-        { name: 'Ruohan Zhu', wins: 0, losses: 0 },
-        { name: 'Sai Sadhana', wins: 0, losses: 0 },
-        { name: 'Jiayi Huang', wins: 0, losses: 0 },
-        { name: 'Yue Yuan', wins: 0, losses: 0 }
+        { name: 'Ruohan Zhu', wins: 0, losses: 2 },
+        { name: 'Sai Sadhana', wins: 2, losses: 0 },
+        { name: 'Jiayi Huang', wins: 0, losses: 2 },
+        { name: 'Sky Arthur', wins: 0, losses: 0 },
+        { name: 'Yue Yuan', wins: 2, losses: 0 }
+        
       ]
     }
   ],

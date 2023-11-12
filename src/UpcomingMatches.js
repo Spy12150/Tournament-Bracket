@@ -142,8 +142,8 @@ const mockUpcomingMatches = [
   {
     id: 15,
     court: 'Court 7',
-    competitor1: 'Ruohan Zhu',
-    competitor2: 'Jiayi Huang',
+    competitor1: 'Sky Arthur ',
+    competitor2: 'Ruohan Zhu',
     matchType: 'Groups',
     event: 'Women\'s Singles',
     time: '11:10 AM'
@@ -223,8 +223,8 @@ const mockUpcomingMatches = [
   {
     id: 23,
     court: 'Court 7',
-    competitor1: 'Ruohan Zhu',
-    competitor2: 'Yue Yuan',
+    competitor1: 'Jiayi Huang',
+    competitor2: 'Ruohan Zhu',
     matchType: 'Groups',
     event: 'Women\'s Singles',
     time: '1:00 PM'
@@ -232,8 +232,8 @@ const mockUpcomingMatches = [
   {
     id: 24,
     court: 'Court 8',
-    competitor1: 'Sai Sadhana',
-    competitor2: 'Jiayi Huang',
+    competitor1: 'Sky Arthur',
+    competitor2: 'Sai Sadhana',
     matchType: 'Groups',
     event: 'Women\'s Singles',
     time: '1:00 PM'
