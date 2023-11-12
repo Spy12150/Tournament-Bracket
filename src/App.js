@@ -115,7 +115,7 @@ const mockTournamentData = {
     {
       name: "Final",
       matches: [
-        { id: 3, competitor1: 'Hanzhang Sun + Samantha Tom', competitor2: 'Johannes Jiang + Yue Yuan', winner: null, scores: [[21, 11, 0], [11, 21, 0]] }
+        { id: 3, competitor1: 'Hanzhang Sun + Samantha Tom', competitor2: 'Johannes Jiang + Yue Yuan', winner: null, scores: [[21, 11, 14], [11, 21, 21]] }
       ],
     },
     
