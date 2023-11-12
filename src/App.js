@@ -38,7 +38,7 @@ const mockTournamentData = {
     {
       name: "Round 1",
       matches: [
-        { id: 1, competitor1: 'Jacky Yang + Hehua Fan', competitor2: 'Jian Wutan + Victor Lin', winner: 'MS Team A', scores: [[0], [0]] },
+        { id: 1, competitor1: 'Jacky Yang + Hehua Fan', competitor2: 'Jian Wutan + Victor Lin', winner: 'MS Team A', scores: [[21], [11]] },
 
       ],
     },
@@ -47,15 +47,15 @@ const mockTournamentData = {
       matches: [
         { id: 1, competitor1: 'HanZhang Sun + Weijia Jiang', competitor2: 'Winner of Round 1', winner: 'MS Team A', scores: [[0], [0]] },
         { id: 2, competitor1: 'Aditya Pandya + Rugved Kore', competitor2: 'Jerry Huang + YunHao Liang', winner: 'MS Team D', scores: [[0], [0]] },
-        { id: 1, competitor1: 'John Fan + Ren Liang Lan', competitor2: 'Louis Leng + Zheng Haoling', winner: 'MS Team A', scores: [[0], [0]] },
-        { id: 1, competitor1: 'Jiangjiang Song + Yijun Yuan', competitor2: 'Dragon + Veer Gowda', winner: 'MS Team A', scores: [[0], [0]] },
+        { id: 1, competitor1: 'John Fan + Ren Liang Lan', competitor2: 'Louis Leng + Zheng Haoling', winner: 'MS Team A', scores: [[17], [21]] },
+        { id: 1, competitor1: 'Jiangjiang Song + Yijun Yuan', competitor2: 'Dragon + Veer Gowda', winner: 'MS Team A', scores: [[10], [21]] },
       ],
     },
     {
       name: "Round 3",
       matches: [
         { id: 3, competitor1: 'Winner of Match 1', competitor2: 'Winner of Match 2', winner: null, scores: [[0, 0, 0], [0, 0, 0]] },
-        { id: 3, competitor1: 'Winner of Match 3', competitor2: 'Winner of Match 4', winner: null, scores: [[0, 0, 0], [0, 0, 0]] },
+        { id: 3, competitor1: 'Louis Leng + Zheng Haoling', competitor2: 'Dragon + Veer Gowda', winner: null, scores: [[0, 0, 0], [0, 0, 0]] },
       ],
     },
     {
