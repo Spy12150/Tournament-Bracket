@@ -114,8 +114,8 @@ const mockGroupData = {
       teams: [
         
         { name: 'Jerry Huang', wins: 0, losses: 6 },
-        { name: 'Yunhao Liang', wins: 4, losses: 2 },
-        { name: 'Fan He Hua', wins: 2, losses: 4 },
+        { name: 'Yunhao Liang', wins: 2, losses: 4 },
+        { name: 'Fan He Hua', wins: 4, losses: 2 },
         { name: 'Hanzhang Sun', wins: 6, losses: 0 }
       ]
     },

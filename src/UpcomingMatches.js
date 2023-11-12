@@ -37,7 +37,7 @@ const mockUpcomingMatches = [
     id: 17,
     court: 'Court 4',
     competitor1: 'Ren Liang Lan',
-    competitor2: 'Yunhao Liang',
+    competitor2: 'Fan He Hua',
     matchType: 'Quarter Finals',
     event: 'Men\'s Singles',
     time: '1:30 PM'
