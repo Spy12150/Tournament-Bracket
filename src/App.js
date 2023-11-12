@@ -93,8 +93,17 @@ const mockTournamentData = {
     {
       name: "Round 1",
       matches: [
-        { id: 1, competitor1: '#1  Group 1', competitor2: '#2  Group 2', winner: 'MS Team A', scores: [[0, 0, 0], [0, 0, 0]] },
-        { id: 2, competitor1: '#1  Group 2', competitor2: '#2  Group 1', winner: 'MS Team D', scores: [[0, 0, 0], [0, 0, 0]] },
+        { id: 1, competitor1: 'Haoling ZHeng + Yinuo Liu', competitor2: 'Hanzhang Sun + Samantha Tom', winner: 'MS Team A', scores: [[0, 0, 0], [0, 0, 0]] },
+        { id: 2, competitor1: 'Louis Leng + Ruohan Zhu', competitor2: 'Dragon + Sai Sadhana', winner: 'MS Team D', scores: [[0, 0, 0], [0, 0, 0]] },
+        { id: 2, competitor1: 'Xindi Shao + Yijun Yuan', competitor2: 'Sky Arthur + Matthew Dubov', winner: 'MS Team D', scores: [[0, 0, 0], [0, 0, 0]] },
+        { id: 2, competitor1: 'Yiming Tian + Hehua Fan', competitor2: 'Johannes Jiang + Yue Yuan', winner: 'MS Team D', scores: [[0, 0, 0], [0, 0, 0]] },
+      ],
+    },
+    {
+      name: "Round 2",
+      matches: [
+        { id: 3, competitor1: 'Winner of Match 1', competitor2: 'Winner of Match 2', winner: null, scores: [[0, 0, 0], [0, 0, 0]] },
+        { id: 3, competitor1: 'Winner of Match 3', competitor2: 'Winner of Match 4', winner: null, scores: [[0, 0, 0], [0, 0, 0]] },
       ],
     },
     {
@@ -153,23 +162,6 @@ const mockGroupData = {
         { name: 'Sky Arthur', wins: 0, losses: 4 },
         { name: 'Yue Yuan', wins: 6, losses: 0 }
         
-      ]
-    }
-  ],
-  "Mixed Doubles": [
-    {
-      teams: [
-        { name: 'J Yang + R Zhu', wins: 0, losses: 0 },
-        { name: 'R Kore + N Natarajan', wins: 0, losses: 0 },
-        { name: 'J Jiang + Y Yuan', wins: 0, losses: 0 },
-        { name: 'H Feng+ Y Tian', wins: 0, losses: 0 },
-      ]
-    },
-    {
-      teams: [
-        { name: 'M Dubov + S Arthur', wins: 0, losses: 0 },
-        { name: 'M Nordin + S Sadhana', wins: 0, losses: 0 },
-        { name: 'H Sun + S Tom', wins: 0, losses: 0 },
       ]
     }
   ],

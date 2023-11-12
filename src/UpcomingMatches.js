@@ -51,6 +51,24 @@ const mockUpcomingMatches = [
   event: 'Women\'s Singles',
   time: '1:30 PM'
 },
+{
+  id: 17,
+  court: 'Court 4',
+  competitor1: 'Winner of Match 1',
+  competitor2: 'Winner of Match 2',
+  matchType: 'Quarter Finals',
+  event: 'Women\'s Singles',
+  time: '2:15 PM'
+},
+{
+  id: 17,
+  court: 'Court 5',
+  competitor1: 'Winner of Match 3',
+  competitor2: 'Winner of Match 4',
+  matchType: 'Quarter Finals',
+  event: 'Women\'s Singles',
+  time: '2:15 PM'
+},
 ];
 
 
