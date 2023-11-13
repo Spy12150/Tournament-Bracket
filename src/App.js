@@ -17,20 +17,20 @@ const mockTournamentData = {
         { id: 1, competitor1: 'Hanzhang Sun', competitor2: 'Yixiang Luo', winner: 'MS Team A', scores: [[21, 21, 0], [10, 12, 0]] },
         { id: 2, competitor1: 'Veer Gowda', competitor2: 'Aditya Pandya', winner: 'MS Team D', scores: [[21, 21, 0], [16, 16, 0]] },
         { id: 3, competitor1: 'Rugved Kore', competitor2: 'Yijun Yuan', winner: 'MS Team E', scores: [[21, 21, 0], [10, 11, 0]] },
-        { id: 4, competitor1: 'Ren Liang Lan', competitor2: 'Yunhao Liang', winner: 'MS Team G', scores: [[20, 21, 20], [22, 18, 22]] }
+        { id: 4, competitor1: 'Ren Liang Lan', competitor2: 'Fan He Hua', winner: 'MS Team G', scores: [[20, 21, 20], [22, 18, 22]] }
       ],
     },
     {
       name: "Round 2",
       matches: [
         { id: 3, competitor1: 'HanZhang Sun', competitor2: 'Veer Gowda', winner: null, scores: [[15, 21, 21], [21, 14, 13]] },
-        { id: 6, competitor1: 'Rugved Kore', competitor2: 'Yunhao Liang', winner: null, scores: [[16, 17, 0], [21, 21, 0]] }
+        { id: 6, competitor1: 'Rugved Kore', competitor2: 'Fan He Hua', winner: null, scores: [[16, 17, 0], [21, 21, 0]] }
       ],
     },
     {
       name: "Final",
       matches: [
-        { id: 7, competitor1: 'HanZhang Sun', competitor2: 'Yunhao Liang', winner: null, scores: [[17, 21, 21], [21, 11, 10]] }
+        { id: 7, competitor1: 'HanZhang Sun', competitor2: 'Fan He Hua', winner: null, scores: [[17, 21, 21], [21, 11, 10]] }
       ],
     },
   ],
@@ -85,7 +85,7 @@ const mockTournamentData = {
     {
       name: "Finals",
       matches: [
-        { id: 3, competitor1: 'Nandini Natarajan + Sky Arthur', competitor2: 'Samantha Tom + Sai Sadhana', winner: null, scores: [[13, 9, 0], [21, 21, 0]] },
+        { id: 3, competitor1: 'Nandini Natarajan + Sky Arthur', competitor2: 'Samantha Tom + Yue Yuan', winner: null, scores: [[13, 9, 0], [21, 21, 0]] },
       ],
     },
   ],
